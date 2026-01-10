@@ -1,0 +1,135 @@
+{
+    "name": "Thief",
+    "weapons": [
+        3,
+        11,
+        0
+    ],
+    "elements": [
+        9,
+        0
+    ],
+    "movement": 3,
+    "baseStats": [
+        0,
+        3,
+        4,
+        0,
+        7,
+        5,
+        1,
+        2
+    ],
+    "skill1Name": "Lockpick",
+    "skill1Data": "Can pick locks on the map.",
+    "skill2Name": "---",
+    "skill2Data": "---",
+    "skill3Name": "---",
+    "skill3Data": "---",
+    "preClass1": "",
+    "preClass2": "",
+    "preClass3": "",
+    "nextClass1": "",
+    "nextClass2": "",
+    "nextClass3": "",
+    "abilities": [
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 3,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 25,
+            "power": 80,
+            "range": 2,
+            "effect": "No Effect"
+        },
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 11,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 30,
+            "power": 100,
+            "range": 3,
+            "effect": "No Effect"
+        },
+        {
+            "abilityType": "move",
+            "name": "Steal",
+            "level": 1,
+            "weapon": 0,
+            "element": 0,
+            "moveType": 6,
+            "cost": 5,
+            "delay": 25,
+            "power": 0,
+            "range": 2,
+            "effect": "Steals money or an Item"
+        },
+        {
+            "abilityType": "move",
+            "name": "Take Cover",
+            "level": 3,
+            "weapon": 0,
+            "element": 0,
+            "moveType": 4,
+            "cost": 7,
+            "delay": 10,
+            "power": 0,
+            "range": 1,
+            "effect": "Increases Stealth and reduces damage from Ranged Attacks"
+        },
+        {
+            "abilityType": "passive",
+            "name": "Scout's Eyes",
+            "level": 5,
+            "condition": "Have any Cover bonus",
+            "effect": "Increase Sight range and strength"
+        },
+        {
+            "abilityType": "move",
+            "name": "Quick Strike",
+            "level": 7,
+            "weapon": 3,
+            "element": 0,
+            "moveType": 1,
+            "cost": 6,
+            "delay": 15,
+            "power": 50,
+            "range": 2,
+            "effect": "Deal 2x damage if target is not focused on the user"
+        },
+        {
+            "abilityType": "move",
+            "name": "Poison Arrow",
+            "level": 9,
+            "weapon": 11,
+            "element": 9,
+            "moveType": 1,
+            "cost": 13,
+            "delay": 45,
+            "power": 20,
+            "range": 3,
+            "effect": "Inflicts Poison - 80%"
+        },
+        {
+            "abilityType": "move",
+            "name": "Triple Cutter",
+            "level": 10,
+            "weapon": 3,
+            "element": 9,
+            "moveType": 1,
+            "cost": 17,
+            "delay": 35,
+            "power": 70,
+            "range": 6,
+            "effect": "3 Hits, DEF Down - 30%"
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "name": "Gladiator",
+    "weapons": [
+        8,
+        7,
+        0
+    ],
+    "elements": [
+        5,
+        0
+    ],
+    "movement": 1,
+    "baseStats": [
+        6,
+        0,
+        7,
+        0,
+        5,
+        0,
+        3,
+        1
+    ],
+    "skill1Name": "Power Through",
+    "skill1Data": "Immune to Knockback",
+    "skill2Name": "---",
+    "skill2Data": "---",
+    "skill3Name": "---",
+    "skill3Data": "---",
+    "preClass1": "",
+    "preClass2": "",
+    "preClass3": "",
+    "nextClass1": "",
+    "nextClass2": "",
+    "nextClass3": "",
+    "abilities": [
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 8,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 35,
+            "power": 110,
+            "range": 2,
+            "effect": "No Effect"
+        },
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 7,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 30,
+            "power": 100,
+            "range": 2,
+            "effect": "No Effect"
+        }
+    ]
+}

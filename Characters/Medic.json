@@ -1,0 +1,135 @@
+{
+    "name": "Medic",
+    "weapons": [
+        3,
+        12,
+        0
+    ],
+    "elements": [
+        9,
+        0
+    ],
+    "movement": 4,
+    "baseStats": [
+        3,
+        5,
+        0,
+        4,
+        3,
+        6,
+        0,
+        1
+    ],
+    "skill1Name": "Survival Expertise",
+    "skill1Data": "Resist Physical status effects, immune to Paralysis and Poison",
+    "skill2Name": "---",
+    "skill2Data": "---",
+    "skill3Name": "---",
+    "skill3Data": "---",
+    "preClass1": "",
+    "preClass2": "",
+    "preClass3": "",
+    "nextClass1": "",
+    "nextClass2": "",
+    "nextClass3": "",
+    "abilities": [
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 3,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 25,
+            "power": 80,
+            "range": 2,
+            "effect": "No Effect"
+        },
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 11,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 30,
+            "power": 80,
+            "range": 3,
+            "effect": "No Effect"
+        },
+        {
+            "abilityType": "move",
+            "name": "Patch Up",
+            "level": 1,
+            "weapon": 3,
+            "element": 9,
+            "moveType": 3,
+            "cost": 7,
+            "delay": 25,
+            "power": 100,
+            "range": 2,
+            "effect": "Heal"
+        },
+        {
+            "abilityType": "move",
+            "name": "Antidote",
+            "level": 3,
+            "weapon": 3,
+            "element": 9,
+            "moveType": 3,
+            "cost": 4,
+            "delay": 20,
+            "power": 0,
+            "range": 2,
+            "effect": "Cure Paralysis, Poison, and Blind"
+        },
+        {
+            "abilityType": "move",
+            "name": "Distant Heal",
+            "level": 5,
+            "weapon": 11,
+            "element": 9,
+            "moveType": 3,
+            "cost": 11,
+            "delay": 30,
+            "power": 90,
+            "range": 3,
+            "effect": "Heal"
+        },
+        {
+            "abilityType": "passive",
+            "name": "Healthy Body",
+            "level": 7,
+            "condition": "Always Active",
+            "effect": "Heal 5% HP at the end of the turn"
+        },
+        {
+            "abilityType": "move",
+            "name": "Stunning Shot",
+            "level": 9,
+            "weapon": 11,
+            "element": 9,
+            "moveType": 1,
+            "cost": 15,
+            "delay": 45,
+            "power": 10,
+            "range": 3,
+            "effect": "Stun - 90%"
+        },
+        {
+            "abilityType": "move",
+            "name": "First Aid",
+            "level": 10,
+            "weapon": 3,
+            "element": 9,
+            "moveType": 3,
+            "cost": 17,
+            "delay": 30,
+            "power": 200,
+            "range": 2,
+            "effect": "Heal"
+        }
+    ]
+}

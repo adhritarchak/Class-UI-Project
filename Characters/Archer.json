@@ -1,0 +1,70 @@
+{
+    "name": "Archer",
+    "weapons": [
+        11,
+        0,
+        0
+    ],
+    "elements": [
+        4,
+        0
+    ],
+    "movement": 1,
+    "baseStats": [
+        2,
+        3,
+        4,
+        0,
+        3,
+        7,
+        1,
+        2
+    ],
+    "skill1Name": "Deadeye",
+    "skill1Data": "Immune to accuracy penalties from terrain or unit type.",
+    "skill2Name": "---",
+    "skill2Data": "---",
+    "skill3Name": "---",
+    "skill3Data": "---",
+    "preClass1": "",
+    "preClass2": "",
+    "preClass3": "",
+    "nextClass1": "Sharpshooter",
+    "nextClass2": "",
+    "nextClass3": "",
+    "abilities": [
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 11,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 30,
+            "power": 100,
+            "range": 3,
+            "effect": "No Effect"
+        },
+        {
+            "abilityType": "move",
+            "name": "Snipe Shot",
+            "level": 3,
+            "weapon": 11,
+            "element": 0,
+            "moveType": 1,
+            "cost": 4,
+            "delay": 60,
+            "power": 160,
+            "range": 3,
+            "effect": "Ignores target's Evasion"
+        },
+        {
+            "abilityType": "passive",
+            "name": "Weak Point Targeting",
+            "level": 50,
+            "condition": "Land a Critical Hit",
+            "effect": "Decrease target's DEF"
+        }
+    ]
+}

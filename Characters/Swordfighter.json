@@ -1,0 +1,168 @@
+{
+    "name": "Swordfighter",
+    "weapons": [
+        1,
+        0,
+        0
+    ],
+    "elements": [
+        5,
+        0
+    ],
+    "movement": 1,
+    "baseStats": [
+        4,
+        0,
+        6,
+        0,
+        6,
+        4,
+        1,
+        1
+    ],
+    "skill1Name": "Duelist",
+    "skill1Data": "Increase accuracy and evasion against users of the same weapon.",
+    "skill2Name": "---",
+    "skill2Data": "---",
+    "skill3Name": "---",
+    "skill3Data": "---",
+    "preClass1": "",
+    "preClass2": "",
+    "preClass3": "",
+    "nextClass1": "Swordmaster",
+    "nextClass2": "",
+    "nextClass3": "",
+    "abilities": [
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 1,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 30,
+            "power": 100,
+            "range": 2,
+            "effect": "No Effect"
+        },
+        {
+            "abilityType": "move",
+            "name": "Double Slash",
+            "level": 3,
+            "weapon": 1,
+            "element": 0,
+            "moveType": 1,
+            "cost": 5,
+            "delay": 40,
+            "power": 65,
+            "range": 2,
+            "effect": "2 Hits"
+        },
+        {
+            "abilityType": "move",
+            "name": "Earth Plume",
+            "level": 5,
+            "weapon": 1,
+            "element": 5,
+            "moveType": 1,
+            "cost": 8,
+            "delay": 35,
+            "power": 80,
+            "range": 3,
+            "effect": "No Effect"
+        },
+        {
+            "abilityType": "move",
+            "name": "Delta Blade",
+            "level": 7,
+            "weapon": 1,
+            "element": 0,
+            "moveType": 1,
+            "cost": 7,
+            "delay": 30,
+            "power": 35,
+            "range": 6,
+            "effect": "Increased Guard damage"
+        },
+        {
+            "abilityType": "passive",
+            "name": "Strike Back",
+            "level": 9,
+            "condition": "Guard a Melee Attack",
+            "effect": "Increase damage dealt to attacker on next \nattack"
+        },
+        {
+            "abilityType": "move",
+            "name": "Rapid Edge",
+            "level": 10,
+            "weapon": 1,
+            "element": 4,
+            "moveType": 1,
+            "cost": 4,
+            "delay": 15,
+            "power": 50,
+            "range": 2,
+            "effect": "No Effect"
+        },
+        {
+            "abilityType": "move",
+            "name": "Spike Crash",
+            "level": 12,
+            "weapon": 1,
+            "element": 5,
+            "moveType": 1,
+            "cost": 21,
+            "delay": 35,
+            "power": 220,
+            "range": 2,
+            "effect": "Stun - 10%"
+        },
+        {
+            "abilityType": "passive",
+            "name": "Bravery",
+            "level": 14,
+            "condition": "HP > 80%",
+            "effect": "Resist Silence, Fear, Rage, and Curse - 80%"
+        },
+        {
+            "abilityType": "move",
+            "name": "Flash of Steel",
+            "level": 16,
+            "weapon": 1,
+            "element": 7,
+            "moveType": 1,
+            "cost": 18,
+            "delay": 20,
+            "power": 120,
+            "range": 2,
+            "effect": "AGI Down - 10%"
+        },
+        {
+            "abilityType": "move",
+            "name": "Concentration",
+            "level": 18,
+            "weapon": 1,
+            "element": 5,
+            "moveType": 5,
+            "cost": 15,
+            "delay": 30,
+            "power": 0,
+            "range": 2,
+            "effect": "Heal 50 HP, DEX Up"
+        },
+        {
+            "abilityType": "move",
+            "name": "Boulder Cleave",
+            "level": 20,
+            "weapon": 1,
+            "element": 5,
+            "moveType": 1,
+            "cost": 30,
+            "delay": 50,
+            "power": 350,
+            "range": 7,
+            "effect": "DEF Down - 50%"
+        }
+    ]
+}

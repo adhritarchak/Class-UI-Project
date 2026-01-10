@@ -1,0 +1,76 @@
+{
+    "name": "Sword Saint",
+    "weapons": [
+        1,
+        4,
+        5
+    ],
+    "elements": [
+        5,
+        4
+    ],
+    "movement": 4,
+    "baseStats": [
+        9,
+        5,
+        15,
+        7,
+        16,
+        14,
+        6,
+        10
+    ],
+    "skill1Name": "Duelist",
+    "skill1Data": "Increase accuracy and evasion against users of the same weapon.",
+    "skill2Name": "Parry",
+    "skill2Data": "Guard upgraded to Parry.",
+    "skill3Name": "Divine Wind",
+    "skill3Data": "Increases movement after using Wind-element moves.",
+    "preClass1": "Swordmaster",
+    "preClass2": "",
+    "preClass3": "",
+    "nextClass1": "",
+    "nextClass2": "",
+    "nextClass3": "",
+    "abilities": [
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 1,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 30,
+            "power": 100,
+            "range": 2,
+            "effect": "No Effect"
+        },
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 4,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 30,
+            "power": 90,
+            "range": 2,
+            "effect": "No Effect"
+        },
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 5,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 30,
+            "power": 100,
+            "range": 2,
+            "effect": "No Effect"
+        }
+    ]
+}

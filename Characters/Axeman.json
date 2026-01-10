@@ -1,0 +1,50 @@
+{
+    "name": "Axeman",
+    "weapons": [
+        7,
+        0,
+        0
+    ],
+    "elements": [
+        1,
+        0
+    ],
+    "movement": 1,
+    "baseStats": [
+        6,
+        0,
+        7,
+        0,
+        5,
+        1,
+        1,
+        2
+    ],
+    "skill1Name": "Shake it Off",
+    "skill1Data": "Traps and Terrain Effects deal 75% less damage.",
+    "skill2Name": "---",
+    "skill2Data": "---",
+    "skill3Name": "---",
+    "skill3Data": "---",
+    "preClass1": "",
+    "preClass2": "",
+    "preClass3": "",
+    "nextClass1": "",
+    "nextClass2": "",
+    "nextClass3": "",
+    "abilities": [
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 7,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 35,
+            "power": 110,
+            "range": 2,
+            "effect": "No Effect"
+        }
+    ]
+}
