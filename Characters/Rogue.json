@@ -1,0 +1,50 @@
+{
+    "name": "Rogue",
+    "weapons": [
+        4,
+        0,
+        0
+    ],
+    "elements": [
+        6,
+        0
+    ],
+    "movement": 4,
+    "baseStats": [
+        1,
+        4,
+        3,
+        3,
+        6,
+        3,
+        2,
+        0
+    ],
+    "skill1Name": "Quick Feet",
+    "skill1Data": "Prevents losses to evasion, immune to Chained",
+    "skill2Name": "---",
+    "skill2Data": "---",
+    "skill3Name": "---",
+    "skill3Data": "---",
+    "preClass1": "",
+    "preClass2": "",
+    "preClass3": "",
+    "nextClass1": "",
+    "nextClass2": "",
+    "nextClass3": "",
+    "abilities": [
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 4,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 25,
+            "power": 90,
+            "range": 2,
+            "effect": "No Effect"
+        }
+    ]
+}
