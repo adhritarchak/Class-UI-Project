@@ -552,7 +552,7 @@ def main():
     newCharacterButton = ttk.Button(saveLoadFrame, text="New", padding=5, command=newCharacter)
     newCharacterButton.pack(side=LEFT, padx=10)
     loadStatus.pack(side=LEFT, padx=3)
-    loadEntry.bind("<Return>", lambda event: loadCharacter(loadEntry.get()))
+    loadEntry.bind("<Return>", lambda event: loadCharacter(loadEntry.get()))        # Load character when Enter is pressed in loadEntry
     # -----------------------------
 
     # --- Class Save/Load Button Configuration ---
@@ -568,10 +568,10 @@ def main():
     canvas.create_window((0,0), window=base, anchor="nw")
     base.update_idletasks()
     canvas.config(scrollregion=[0, 0, base.winfo_width() - 700, base.winfo_height()])
-    root.bind_all("<MouseWheel>", lambda event: canvas.yview_scroll(int(-1*(event.delta/120)), "units"))
-    root.bind_all("<Shift-MouseWheel>", lambda event: canvas.xview_scroll(int(-1*(event.delta/120)), "units"))
-    root.bind("<Control-KeyPress-w>", lambda event: quit())
-    root.bind("<Control-KeyPress-s>", lambda event: saveButton.invoke())
+    root.bind_all("<MouseWheel>", lambda event: canvas.yview_scroll(int(-1*(event.delta/120)), "units"))        # Bind scrl to vertical scrolling
+    root.bind_all("<Shift-MouseWheel>", lambda event: canvas.xview_scroll(int(-1*(event.delta/120)), "units"))  # Bind shift+scrl to horizontal scrolling
+    root.bind("<Control-KeyPress-w>", lambda event: quit())                                                     # Bind ctrl+w to quit
+    root.bind("<Control-KeyPress-s>", lambda event: saveButton.invoke())                                        # Bind ctrl+s to save
     # -----------------------------
 
     sv_ttk.set_theme(darkdetect.theme())
