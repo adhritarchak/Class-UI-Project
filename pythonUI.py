@@ -106,6 +106,16 @@ def loadCharacterFile(classname: str) -> CharacterClass:
             return character
     except FileNotFoundError:
         return None
+def getCharacterFiles() -> list[str]:
+    """Returns a list of all .JSON files in the Characters folder, without the .JSON extension."""
+    
+    if not os.path.exists("Characters"):
+        return []
+    files = []
+    for file in os.listdir("Characters"):
+        if file.endswith(".json") and file.find("Test") == -1:
+            files.append(file[:-5])
+    return files
 
 def main():
     # --- Setup ---
@@ -135,7 +145,7 @@ def main():
     root.grid_columnconfigure(0, weight=1)
 
     # Base frame
-    base = ttk.Frame(canvas, border=1, padding=5)       # Use this frame is the parent for other frames/widgets in this program.
+    base = ttk.Frame(canvas, border=1, padding=5)       # Use this frame as the parent for other frames/widgets in this program.
     base.rowconfigure(1, weight=1)
     base.columnconfigure(1, weight=1)
 
@@ -143,6 +153,8 @@ def main():
     currentCharacter = CharacterClass()
     FONT = tkFont.Font(family="Segoe UI", size=10)      # This has to be defined after root is created. I don't know why, but it cannot be defined outside the main function.
     skillFrameWidth = 10
+    characterFiles: list[str] = getCharacterFiles()
+    characterIndex: int = 0
 
     # Icons
     tierIcons = TierIcons()         # Stat Tiers
@@ -440,6 +452,7 @@ def main():
             updateClassButton(nextClassButton3, nextClassEntry3.get())
 
             sorter.clear()
+            characterIndex = characterFiles.index(loadCharacter) if loadCharacter in characterFiles else 0
 
             for ability in currentCharacter.abilities:
                 if(ability.get("abilityType", "ability") == "move"):
@@ -520,11 +533,21 @@ def main():
         nextClassEntry3.delete(0, END)
 
         sorter.clear()
+        characterIndex = 0
         loadEntry.delete(0, END)
         printLoadStatus("New character ready.")
 
         base.update_idletasks()
         canvas.config(scrollregion=[0, 0, base.winfo_width() - 700, base.winfo_height()])
+    def nextCharacter() -> None:
+        """Loads the next character in the characterFiles list."""
+        
+        nonlocal characterIndex
+        if len(characterFiles) == 0:
+            printLoadStatus("No character files found.")
+            return
+        loadCharacter(characterFiles[characterIndex])
+        characterIndex = (characterIndex + 1) % len(characterFiles)
     # --------------------------------
 
     # --- Event Configurations ---
@@ -551,6 +574,8 @@ def main():
     loadButton.pack(side=LEFT)
     newCharacterButton = ttk.Button(saveLoadFrame, text="New", padding=5, command=newCharacter)
     newCharacterButton.pack(side=LEFT, padx=10)
+    nextButton = ttk.Button(saveLoadFrame, text="Next", padding=5, command=nextCharacter)
+    nextButton.pack(side=LEFT)
     loadStatus.pack(side=LEFT, padx=3)
     loadEntry.bind("<Return>", lambda event: loadCharacter(loadEntry.get()))        # Load character when Enter is pressed in loadEntry
     # -----------------------------
