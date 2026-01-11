@@ -510,6 +510,7 @@ def main():
         weapon3.setIcon(0)
         element1.setIcon(0)
         element2.setIcon(0)
+        movement.setIcon(0)
 
         HPSelector.setIcon(0)
         MPSelector.setIcon(0)
