@@ -1,0 +1,50 @@
+{
+    "name": "Striker",
+    "weapons": [
+        2,
+        0,
+        0
+    ],
+    "elements": [
+        1,
+        0
+    ],
+    "movement": 5,
+    "baseStats": [
+        3,
+        1,
+        6,
+        0,
+        2,
+        2,
+        6,
+        2
+    ],
+    "skill1Name": "Counter Power",
+    "skill1Data": "Increase damage from counter-attacks.",
+    "skill2Name": "---",
+    "skill2Data": "---",
+    "skill3Name": "---",
+    "skill3Data": "---",
+    "preClass1": "",
+    "preClass2": "",
+    "preClass3": "",
+    "nextClass1": "",
+    "nextClass2": "",
+    "nextClass3": "",
+    "abilities": [
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 2,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 35,
+            "power": 110,
+            "range": 2,
+            "effect": "No Effect"
+        }
+    ]
+}

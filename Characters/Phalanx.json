@@ -1,0 +1,63 @@
+{
+    "name": "Phalanx",
+    "weapons": [
+        1,
+        2,
+        0
+    ],
+    "elements": [
+        3,
+        0
+    ],
+    "movement": 5,
+    "baseStats": [
+        6,
+        1,
+        3,
+        1,
+        1,
+        2,
+        7,
+        1
+    ],
+    "skill1Name": "Pressure",
+    "skill1Data": "Enemies nearby have reduced evasion.",
+    "skill2Name": "---",
+    "skill2Data": "---",
+    "skill3Name": "---",
+    "skill3Data": "---",
+    "preClass1": "",
+    "preClass2": "",
+    "preClass3": "",
+    "nextClass1": "",
+    "nextClass2": "",
+    "nextClass3": "",
+    "abilities": [
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 1,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 30,
+            "power": 100,
+            "range": 2,
+            "effect": "No Effect"
+        },
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 2,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 35,
+            "power": 110,
+            "range": 2,
+            "effect": "No Effect"
+        }
+    ]
+}
