@@ -21,7 +21,7 @@
         2
     ],
     "skill1Name": "Deadeye",
-    "skill1Data": "Does not suffer accuracy penalties from terrain or unit type.",
+    "skill1Data": "Immune to accuracy penalties from terrain or unit type.",
     "skill2Name": "---",
     "skill2Data": "---",
     "skill3Name": "---",
@@ -29,7 +29,7 @@
     "preClass1": "",
     "preClass2": "",
     "preClass3": "",
-    "nextClass1": "",
+    "nextClass1": "Artificer",
     "nextClass2": "",
     "nextClass3": "",
     "abilities": [
@@ -45,6 +45,19 @@
             "power": 100,
             "range": 3,
             "effect": "No Effect"
+        },
+        {
+            "abilityType": "move",
+            "name": "Bayonet Stab",
+            "level": 1,
+            "weapon": 12,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 40,
+            "power": 100,
+            "range": 2,
+            "effect": "Knockback"
         }
     ]
 }
