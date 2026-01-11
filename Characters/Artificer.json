@@ -1,33 +1,33 @@
 {
-    "name": "Cavalier",
+    "name": "Artificer",
     "weapons": [
-        2,
-        6,
+        12,
+        15,
         0
     ],
     "elements": [
-        5,
-        0
-    ],
-    "movement": 6,
-    "baseStats": [
-        3,
-        0,
-        5,
-        1,
-        3,
-        3,
         4,
         3
     ],
-    "skill1Name": "Hit & Run",
-    "skill1Data": "Can attack before moving.",
-    "skill2Name": "---",
-    "skill2Data": "---",
+    "movement": 3,
+    "baseStats": [
+        2,
+        7,
+        7,
+        11,
+        6,
+        10,
+        4,
+        5
+    ],
+    "skill1Name": "Engineering",
+    "skill1Data": "Able to operate and repair engineered structures.",
+    "skill2Name": "Magical Expertise",
+    "skill2Data": "Able to operate and repair magical structures.",
     "skill3Name": "---",
     "skill3Data": "---",
-    "preClass1": "",
-    "preClass2": "",
+    "preClass1": "Rifleman",
+    "preClass2": "Mage",
     "preClass3": "",
     "nextClass1": "",
     "nextClass2": "",
@@ -37,27 +37,27 @@
             "abilityType": "move",
             "name": "Basic Attack",
             "level": 1,
-            "weapon": 2,
-            "element": 0,
-            "moveType": 1,
-            "cost": 0,
-            "delay": 35,
-            "power": 110,
-            "range": 2,
-            "effect": "No Effect"
-        },
-        {
-            "abilityType": "move",
-            "name": "Basic Attack",
-            "level": 1,
-            "weapon": 6,
+            "weapon": 12,
             "element": 0,
             "moveType": 1,
             "cost": 0,
             "delay": 30,
             "power": 100,
-            "range": 2,
+            "range": 3,
             "effect": "No Effect"
+        },
+        {
+            "abilityType": "move",
+            "name": "Bayonet Stab",
+            "level": 1,
+            "weapon": 12,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 40,
+            "power": 100,
+            "range": 2,
+            "effect": "Knockback"
         }
     ]
 }

@@ -21,7 +21,7 @@
         10
     ],
     "skill1Name": "Duelist",
-    "skill1Data": "Increase accuracy and evasion against users of the same weapon.",
+    "skill1Data": "Increase damage to and reduce damage from users of the same \nweapon.",
     "skill2Name": "Parry",
     "skill2Data": "Guard upgraded to Parry.",
     "skill3Name": "Divine Wind",

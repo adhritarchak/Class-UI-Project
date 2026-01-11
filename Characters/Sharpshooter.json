@@ -23,7 +23,7 @@
     "skill1Name": "Deadeye",
     "skill1Data": "Immune to accuracy penalties from terrain or unit type.",
     "skill2Name": "Trueshot",
-    "skill2Data": "Increase critical hit rate against targets who are guarding.",
+    "skill2Data": "Ignore half of any target's evasion.",
     "skill3Name": "---",
     "skill3Data": "---",
     "preClass1": "Archer",

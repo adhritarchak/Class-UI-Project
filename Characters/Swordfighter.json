@@ -21,7 +21,7 @@
         1
     ],
     "skill1Name": "Duelist",
-    "skill1Data": "Increase accuracy and evasion against users of the same weapon.",
+    "skill1Data": "Increase damage to and reduce damage from users of the same \nweapon.",
     "skill2Name": "---",
     "skill2Data": "---",
     "skill3Name": "---",

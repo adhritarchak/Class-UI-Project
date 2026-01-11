@@ -21,7 +21,7 @@
         0
     ],
     "skill1Name": "Quick Feet",
-    "skill1Data": "Prevents losses to evasion, immune to Chained",
+    "skill1Data": "Prevents losses to evasion; immune to Chained.",
     "skill2Name": "---",
     "skill2Data": "---",
     "skill3Name": "---",
@@ -29,8 +29,8 @@
     "preClass1": "",
     "preClass2": "",
     "preClass3": "",
-    "nextClass1": "",
-    "nextClass2": "",
+    "nextClass1": "Swordmaster",
+    "nextClass2": "Musketeer",
     "nextClass3": "",
     "abilities": [
         {
