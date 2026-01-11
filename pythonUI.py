@@ -405,6 +405,8 @@ def main():
             with open(f"Characters\\{loadEntry.get()}.json", "w") as f:     # If the character file exists, overwrite it
                 json.dump(currentCharacter.__dict__, f, indent=4)
         printLoadStatus("Successfully saved.")
+        characterFiles = getCharacterFiles()                                                                # Update characterFiles list
+        characterIndex = characterFiles.index(loadEntry.get()) if loadEntry.get() in characterFiles else 0  # Update characterIndex
     def loadCharacter(loadCharacter: str = None, print = True):
         """Loads a character from the specified .JSON file."""
 
