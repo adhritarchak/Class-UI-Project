@@ -1,0 +1,50 @@
+{
+    "name": "Captain",
+    "weapons": [
+        1,
+        0,
+        0
+    ],
+    "elements": [
+        6,
+        0
+    ],
+    "movement": 1,
+    "baseStats": [
+        3,
+        4,
+        4,
+        2,
+        2,
+        2,
+        4,
+        1
+    ],
+    "skill1Name": "Inspiration",
+    "skill1Data": "Increase defenses of nearby allied units",
+    "skill2Name": "",
+    "skill2Data": "",
+    "skill3Name": "",
+    "skill3Data": "",
+    "preClass1": "",
+    "preClass2": "",
+    "preClass3": "",
+    "nextClass1": "Paladin",
+    "nextClass2": "Hexblade",
+    "nextClass3": "Strategist",
+    "abilities": [
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 1,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 30,
+            "power": 100,
+            "range": 2,
+            "effect": "No Effect"
+        }
+    ]
+}

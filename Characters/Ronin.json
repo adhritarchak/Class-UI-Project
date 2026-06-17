@@ -1,0 +1,63 @@
+{
+    "name": "Ronin",
+    "weapons": [
+        5,
+        0,
+        0
+    ],
+    "elements": [
+        3,
+        0
+    ],
+    "movement": 1,
+    "baseStats": [
+        1,
+        1,
+        5,
+        0,
+        6,
+        4,
+        4,
+        1
+    ],
+    "skill1Name": "",
+    "skill1Data": "",
+    "skill2Name": "",
+    "skill2Data": "",
+    "skill3Name": "",
+    "skill3Data": "",
+    "preClass1": "",
+    "preClass2": "",
+    "preClass3": "",
+    "nextClass1": "Samurai",
+    "nextClass2": "Swordmaster",
+    "nextClass3": "",
+    "abilities": [
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 5,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 30,
+            "power": 100,
+            "range": 2,
+            "effect": "No Effect"
+        },
+        {
+            "abilityType": "move",
+            "name": "Arc Slash",
+            "level": 1,
+            "weapon": 5,
+            "element": 0,
+            "moveType": 1,
+            "cost": 8,
+            "delay": 45,
+            "power": 110,
+            "range": 6,
+            "effect": "No Effect"
+        }
+    ]
+}

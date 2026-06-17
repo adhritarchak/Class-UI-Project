@@ -332,8 +332,8 @@ def main():
     # --------------------------------
 
     # --- Save/Load Frame (Outside Canvas) ---
-    saveLoadFrame = ttk.Frame(root)
-    saveLoadFrame.grid(row=2, column=0, sticky="ew", pady=10)
+    saveLoadFrame = ttk.Frame(root, borderwidth=10 ,relief='raised')
+    saveLoadFrame.grid(row=2, column=0, sticky="ew")
     loadStatus = ttk.Label(saveLoadFrame)
     # --------------------------------
 

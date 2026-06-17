@@ -1,0 +1,76 @@
+{
+    "name": "Wizard",
+    "weapons": [
+        16,
+        0,
+        0
+    ],
+    "elements": [
+        3,
+        8
+    ],
+    "movement": 2,
+    "baseStats": [
+        3,
+        4,
+        1,
+        6,
+        1,
+        3,
+        3,
+        1
+    ],
+    "skill1Name": "",
+    "skill1Data": "",
+    "skill2Name": "",
+    "skill2Data": "",
+    "skill3Name": "",
+    "skill3Data": "",
+    "preClass1": "",
+    "preClass2": "",
+    "preClass3": "",
+    "nextClass1": "Warlock",
+    "nextClass2": "Dark Knight",
+    "nextClass3": "",
+    "abilities": [
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 16,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 0,
+            "power": 0,
+            "range": 2,
+            "effect": "Restore 50% of damage dealt as SP"
+        },
+        {
+            "abilityType": "move",
+            "name": "Shock",
+            "level": 1,
+            "weapon": 16,
+            "element": 3,
+            "moveType": 2,
+            "cost": 4,
+            "delay": 25,
+            "power": 85,
+            "range": 3,
+            "effect": "Paralysis - 10%; high crit rate"
+        },
+        {
+            "abilityType": "move",
+            "name": "Dark Shot",
+            "level": 1,
+            "weapon": 16,
+            "element": 8,
+            "moveType": 2,
+            "cost": 9,
+            "delay": 40,
+            "power": 150,
+            "range": 3,
+            "effect": "High crit rate"
+        }
+    ]
+}

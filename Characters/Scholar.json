@@ -1,0 +1,76 @@
+{
+    "name": "Scholar",
+    "weapons": [
+        16,
+        0,
+        0
+    ],
+    "elements": [
+        2,
+        6
+    ],
+    "movement": 2,
+    "baseStats": [
+        1,
+        7,
+        0,
+        5,
+        4,
+        1,
+        2,
+        2
+    ],
+    "skill1Name": "Item Expertise",
+    "skill1Data": "Increase effect of battle items",
+    "skill2Name": "",
+    "skill2Data": "",
+    "skill3Name": "",
+    "skill3Data": "",
+    "preClass1": "",
+    "preClass2": "",
+    "preClass3": "",
+    "nextClass1": "Engineer",
+    "nextClass2": "Alchemist",
+    "nextClass3": "",
+    "abilities": [
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 16,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 35,
+            "power": 65,
+            "range": 2,
+            "effect": "Restore 50% of damage dealt as SP"
+        },
+        {
+            "abilityType": "move",
+            "name": "Ice Shard",
+            "level": 1,
+            "weapon": 16,
+            "element": 2,
+            "moveType": 2,
+            "cost": 3,
+            "delay": 25,
+            "power": 90,
+            "range": 3,
+            "effect": "SPD Down - 30%"
+        },
+        {
+            "abilityType": "move",
+            "name": "Aqua Wave",
+            "level": 1,
+            "weapon": 16,
+            "element": 6,
+            "moveType": 2,
+            "cost": 6,
+            "delay": 25,
+            "power": 110,
+            "range": 6,
+            "effect": "Knockback"
+        }
+    ]
+}

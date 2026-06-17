@@ -1,0 +1,63 @@
+{
+    "name": "Cleric",
+    "weapons": [
+        13,
+        0,
+        0
+    ],
+    "elements": [
+        9,
+        7
+    ],
+    "movement": 2,
+    "baseStats": [
+        1,
+        5,
+        0,
+        4,
+        4,
+        3,
+        0,
+        5
+    ],
+    "skill1Name": "Holy Blessing",
+    "skill1Data": "Resist magic status effects",
+    "skill2Name": "",
+    "skill2Data": "",
+    "skill3Name": "",
+    "skill3Data": "",
+    "preClass1": "",
+    "preClass2": "",
+    "preClass3": "",
+    "nextClass1": "Priest",
+    "nextClass2": "Oracle",
+    "nextClass3": "Troubadour",
+    "abilities": [
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 13,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 35,
+            "power": 65,
+            "range": 2,
+            "effect": "Restore 50% of damage dealt as SP"
+        },
+        {
+            "abilityType": "move",
+            "name": "Heal",
+            "level": 1,
+            "weapon": 13,
+            "element": 7,
+            "moveType": 3,
+            "cost": 5,
+            "delay": 40,
+            "power": 130,
+            "range": 3,
+            "effect": "Heal Target's HP"
+        }
+    ]
+}

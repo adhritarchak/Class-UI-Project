@@ -1,0 +1,89 @@
+{
+    "name": "Astrologer",
+    "weapons": [
+        15,
+        0,
+        0
+    ],
+    "elements": [
+        7,
+        10
+    ],
+    "movement": 2,
+    "baseStats": [
+        2,
+        6,
+        1,
+        5,
+        0,
+        2,
+        3,
+        3
+    ],
+    "skill1Name": "Stellar Insight",
+    "skill1Data": "Increase duration of buffs applied by user by 2 turns",
+    "skill2Name": "",
+    "skill2Data": "",
+    "skill3Name": "",
+    "skill3Data": "",
+    "preClass1": "",
+    "preClass2": "",
+    "preClass3": "",
+    "nextClass1": "Oracle",
+    "nextClass2": "",
+    "nextClass3": "",
+    "abilities": [
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 15,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 35,
+            "power": 70,
+            "range": 2,
+            "effect": "Restore 50% of damage dealt as SP"
+        },
+        {
+            "abilityType": "move",
+            "name": "VIII - Strength",
+            "level": 1,
+            "weapon": 15,
+            "element": 10,
+            "moveType": 5,
+            "cost": 8,
+            "delay": 35,
+            "power": 0,
+            "range": 3,
+            "effect": "Target's STR up"
+        },
+        {
+            "abilityType": "move",
+            "name": "XVI - The Tower",
+            "level": 1,
+            "weapon": 15,
+            "element": 10,
+            "moveType": 5,
+            "cost": 9,
+            "delay": 35,
+            "power": 0,
+            "range": 3,
+            "effect": "Target's DEF, MDF down"
+        },
+        {
+            "abilityType": "move",
+            "name": "Succor",
+            "level": 1,
+            "weapon": 15,
+            "element": 7,
+            "moveType": 3,
+            "cost": 6,
+            "delay": 30,
+            "power": 100,
+            "range": 3,
+            "effect": "Heal target's HP"
+        }
+    ]
+}

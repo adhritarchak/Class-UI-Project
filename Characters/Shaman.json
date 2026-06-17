@@ -1,0 +1,83 @@
+{
+    "name": "Shaman",
+    "weapons": [
+        15,
+        0,
+        0
+    ],
+    "elements": [
+        3,
+        4
+    ],
+    "movement": 2,
+    "baseStats": [
+        3,
+        3,
+        2,
+        4,
+        1,
+        4,
+        4,
+        1
+    ],
+    "skill1Name": "",
+    "skill1Data": "",
+    "skill2Name": "",
+    "skill2Data": "",
+    "skill3Name": "",
+    "skill3Data": "",
+    "preClass1": "",
+    "preClass2": "",
+    "preClass3": "",
+    "nextClass1": "Stormcaller",
+    "nextClass2": "Sage",
+    "nextClass3": "",
+    "abilities": [
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 15,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 35,
+            "power": 70,
+            "range": 2,
+            "effect": "Restore 50% of damage dealt as SP"
+        },
+        {
+            "abilityType": "move",
+            "name": "Thunderstrike",
+            "level": 1,
+            "weapon": 15,
+            "element": 3,
+            "moveType": 2,
+            "cost": 7,
+            "delay": 25,
+            "power": 90,
+            "range": 3,
+            "effect": "Pierces Guard 30%"
+        },
+        {
+            "abilityType": "move",
+            "name": "Slicing Gale",
+            "level": 1,
+            "weapon": 15,
+            "element": 4,
+            "moveType": 2,
+            "cost": 11,
+            "delay": 45,
+            "power": 80,
+            "range": 4,
+            "effect": "Knockback (from center of target)"
+        },
+        {
+            "abilityType": "passive",
+            "name": "Wind Wall",
+            "level": 1,
+            "condition": "HP > 80%",
+            "effect": "Increases evasion from ranged physical attacks"
+        }
+    ]
+}
