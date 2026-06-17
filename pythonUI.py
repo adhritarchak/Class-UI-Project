@@ -245,6 +245,15 @@ def main():
     MDFSelector.grid(row=1, column=7, padx=2, sticky="ew")
     # ---------------------------
 
+    # --- Description ---
+    descriptionFrame = ttk.Frame(base)
+    descriptionFrame.pack(side=TOP, fill=X, pady=4)
+    descLabel = ttk.Label(descriptionFrame, text="Description", padding=1)
+    descLabel.pack(side=TOP,pady=2)
+    descText = UIText(master=descriptionFrame, height=2, width=60, font=FONT)
+    descText.pack(side=TOP,pady=2)
+    # ---------------------------
+
     # --- Class Skills ---
     skill1Frame = ttk.Frame(base)                               # Skill 1
     skill1Frame.pack(side=TOP, fill=X, pady=8)
@@ -368,6 +377,7 @@ def main():
         currentCharacter.setData(
             {
                 "name": nameStr.get(),
+                "description": descText.get("1.0", END).strip(),
                 "weapons": [weapon1.currentIcon, weapon2.currentIcon, weapon3.currentIcon],   
                 "elements": [element1.currentIcon, element2.currentIcon],
                 "movement": movement.currentIcon,
@@ -416,6 +426,7 @@ def main():
             currentCharacter = loadedCharacter
             loadEntry.replaceEntry(loadCharacter)
             nameStr.set(currentCharacter.name)
+            descText.replaceText(currentCharacter.description)
             weapon1.setIcon(currentCharacter.weapons[0])
             weapon2.setIcon(currentCharacter.weapons[1])
             weapon3.setIcon(currentCharacter.weapons[2])
@@ -521,6 +532,7 @@ def main():
         DEFSelector.setIcon(0)
         MDFSelector.setIcon(0)
 
+        descText.delete("1.0", END)
         skill1NameStr.set("")
         skill1Data.delete("1.0", END)
         skill2NameStr.set("")

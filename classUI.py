@@ -81,6 +81,7 @@ class CharacterClass:
     """Contains all data for a character class."""
     
     name: str
+    description: str
     weapons: list[int]
     elements: list[int]
     movement: int
@@ -103,6 +104,7 @@ class CharacterClass:
 
     def __init__(self) -> None:
         self.name = ""
+        self.description = ""
         self.weapons = []
         self.elements = []
         self.movement = 0
@@ -125,6 +127,7 @@ class CharacterClass:
 
     def setData(self, data: dict) -> None:
         self.name = data.get("name", "")
+        self.description = data.get("description", "")
         self.weapons = data.get("weapons", [])
         self.elements = data.get("elements", [])
         self.movement = data.get("movement", 0)
