@@ -1,5 +1,6 @@
 {
     "name": "Druid",
+    "description": "",
     "weapons": [
         13,
         3,
@@ -21,7 +22,7 @@
         6
     ],
     "skill1Name": "Nature's Blessing",
-    "skill1Data": "Resist negative status effects",
+    "skill1Data": "Resist negative status effects.",
     "skill2Name": "",
     "skill2Data": "",
     "skill3Name": "",

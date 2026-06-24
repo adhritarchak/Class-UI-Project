@@ -1,5 +1,6 @@
 {
     "name": "Thief",
+    "description": "A sneaky, high agility class which can pick locks on the map and sneak around to gain good positioning.",
     "weapons": [
         3,
         11,

@@ -1,5 +1,6 @@
 {
     "name": "Cleric",
+    "description": "",
     "weapons": [
         13,
         0,
@@ -21,7 +22,7 @@
         5
     ],
     "skill1Name": "Holy Blessing",
-    "skill1Data": "Resist magic status effects",
+    "skill1Data": "Resist magic status effects.",
     "skill2Name": "",
     "skill2Data": "",
     "skill3Name": "",

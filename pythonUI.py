@@ -95,7 +95,7 @@ def MoveIcons() -> list[PhotoImage]:
     moves.append(Icon("Assets\\Labels\\IconFlying.PNG", 1))
     return moves
 
-def loadCharacterFile(classname: str) -> CharacterClass:
+def LoadCharacterFile(classname: str) -> CharacterClass:
     """Loads a .JSON file. If thew file does not exist, returns None."""
     
     try:
@@ -106,16 +106,21 @@ def loadCharacterFile(classname: str) -> CharacterClass:
             return character
     except FileNotFoundError:
         return None
-def getCharacterFiles() -> list[str]:
+def GetCharacterFiles() -> list[str]:
     """Returns a list of all .JSON files in the Characters folder, without the .JSON extension."""
     
-    if not os.path.exists("Characters"):
+    if not os.path.exists("Characters"):    # If no Character folder, return nothing   
         return []
     files = []
     for file in os.listdir("Characters"):
         if file.endswith(".json") and file.find("Test") == -1:
             files.append(file[:-5])
     return files
+def GetCharacterIndex(charName: str) -> int:
+    files = GetCharacterFiles()
+    if charName in files:
+        return files.index(charName)
+    return -1
 
 def main():
     # --- Setup ---
@@ -153,8 +158,7 @@ def main():
     currentCharacter = CharacterClass()
     FONT = tkFont.Font(family="Segoe UI", size=10)      # This has to be defined after root is created. I don't know why, but it cannot be defined outside the main function.
     skillFrameWidth = 10
-    characterFiles: list[str] = getCharacterFiles()
-    characterIndex: int = 0
+    characterFiles: list[str] = GetCharacterFiles()
 
     # Icons
     tierIcons = TierIcons()         # Stat Tiers
@@ -415,16 +419,15 @@ def main():
             with open(f"Characters\\{loadEntry.get()}.json", "w") as f:     # If the character file exists, overwrite it
                 json.dump(currentCharacter.__dict__, f, indent=4)
         printLoadStatus("Successfully saved.")
-        characterFiles = getCharacterFiles()                                                                # Update characterFiles list
-        characterIndex = characterFiles.index(loadEntry.get()) if loadEntry.get() in characterFiles else 0  # Update characterIndex
-    def loadCharacter(loadCharacter: str = None, print = True):
+        characterFiles = GetCharacterFiles()                                # Update characterFiles list
+    def loadCharacter(loadee: str = None, print = True):
         """Loads a character from the specified .JSON file."""
 
-        loadedCharacter = loadCharacterFile(loadCharacter)
+        loadedCharacter = LoadCharacterFile(loadee)
         if loadedCharacter is not None:
             if(print): printLoadStatus("Successfully loaded.")
             currentCharacter = loadedCharacter
-            loadEntry.replaceEntry(loadCharacter)
+            loadEntry.replaceEntry(loadee)
             nameStr.set(currentCharacter.name)
             descText.replaceText(currentCharacter.description)
             weapon1.setIcon(currentCharacter.weapons[0])
@@ -465,7 +468,6 @@ def main():
             updateClassButton(nextClassButton3, nextClassEntry3.get())
 
             sorter.clear()
-            characterIndex = characterFiles.index(loadCharacter) if loadCharacter in characterFiles else 0
 
             for ability in currentCharacter.abilities:
                 if(ability.get("abilityType", "ability") == "move"):
@@ -513,6 +515,8 @@ def main():
         canvas.config(scrollregion=[0, 0, base.winfo_width() - 700, base.winfo_height()])
     def newCharacter() -> None:
         """Resets all fields to blank values."""
+        yScroll.set(0)
+
         currentCharacter = CharacterClass()
 
         nameStr.set("Name")
@@ -548,21 +552,32 @@ def main():
         nextClassEntry3.delete(0, END)
 
         sorter.clear()
-        characterIndex = 0
         loadEntry.delete(0, END)
         printLoadStatus("New character ready.")
 
         base.update_idletasks()
         canvas.config(scrollregion=[0, 0, base.winfo_width() - 700, base.winfo_height()])
-    def nextCharacter() -> None:
-        """Loads the next character in the characterFiles list."""
-        
-        nonlocal characterIndex
+    def prevCharacter() -> None:
+        """Loads the previous character in the characterFiles list."""
+
+        characterFiles = GetCharacterFiles()
         if len(characterFiles) == 0:
             printLoadStatus("No character files found.")
             return
-        loadCharacter(characterFiles[characterIndex])
-        characterIndex = (characterIndex + 1) % len(characterFiles)
+        if GetCharacterIndex(loadEntry.get()) == -1:
+            loadCharacter(characterFiles[-1])
+            return
+        prevIndex = (GetCharacterIndex(loadEntry.get()) - 1) % len(characterFiles)
+        loadCharacter(characterFiles[prevIndex])
+    def nextCharacter() -> None:
+        """Loads the next character in the characterFiles list."""
+        
+        characterFiles = GetCharacterFiles()
+        if len(characterFiles) == 0:
+            printLoadStatus("No character files found.")
+            return
+        nextIndex = (GetCharacterIndex(loadEntry.get()) + 1) % len(characterFiles)
+        loadCharacter(characterFiles[nextIndex])
     # --------------------------------
 
     # --- Event Configurations ---
@@ -589,8 +604,10 @@ def main():
     loadButton.pack(side=LEFT)
     newCharacterButton = ttk.Button(saveLoadFrame, text="New", padding=5, command=newCharacter)
     newCharacterButton.pack(side=LEFT, padx=10)
+    prevButton = ttk.Button(saveLoadFrame, text="Prev", padding=5, command=prevCharacter)
+    prevButton.pack(side=LEFT)
     nextButton = ttk.Button(saveLoadFrame, text="Next", padding=5, command=nextCharacter)
-    nextButton.pack(side=LEFT)
+    nextButton.pack(side=LEFT, padx=2)
     loadStatus.pack(side=LEFT, padx=3)
     loadEntry.bind("<Return>", lambda event: loadCharacter(loadEntry.get()))        # Load character when Enter is pressed in loadEntry
     # -----------------------------

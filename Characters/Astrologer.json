@@ -1,5 +1,6 @@
 {
     "name": "Astrologer",
+    "description": "",
     "weapons": [
         15,
         0,
@@ -21,7 +22,7 @@
         3
     ],
     "skill1Name": "Stellar Insight",
-    "skill1Data": "Increase duration of buffs applied by user by 2 turns",
+    "skill1Data": "Increase duration of buffs applied by user by 2 turns.",
     "skill2Name": "",
     "skill2Data": "",
     "skill3Name": "",

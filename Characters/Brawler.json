@@ -1,5 +1,6 @@
 {
     "name": "Brawler",
+    "description": "",
     "weapons": [
         10,
         0,
@@ -21,7 +22,7 @@
         3
     ],
     "skill1Name": "Reflex",
-    "skill1Data": "Increased evasion against ranged attacks",
+    "skill1Data": "Increased evasion against ranged attacks.",
     "skill2Name": "---",
     "skill2Data": "---",
     "skill3Name": "---",

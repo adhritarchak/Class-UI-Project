@@ -1,5 +1,6 @@
 {
     "name": "Captain",
+    "description": "",
     "weapons": [
         1,
         0,
@@ -21,7 +22,7 @@
         1
     ],
     "skill1Name": "Inspiration",
-    "skill1Data": "Increase defenses of nearby allied units",
+    "skill1Data": "Increase defenses of nearby allied units.",
     "skill2Name": "",
     "skill2Data": "",
     "skill3Name": "",

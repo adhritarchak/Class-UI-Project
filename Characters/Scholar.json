@@ -1,5 +1,6 @@
 {
     "name": "Scholar",
+    "description": "",
     "weapons": [
         16,
         0,
@@ -21,7 +22,7 @@
         2
     ],
     "skill1Name": "Item Expertise",
-    "skill1Data": "Increase effect of battle items",
+    "skill1Data": "Increase effect of battle items.",
     "skill2Name": "",
     "skill2Data": "",
     "skill3Name": "",
