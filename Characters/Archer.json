@@ -1,5 +1,6 @@
 {
     "name": "Archer",
+    "description": "A bow-wielding hunter with high DEX, who can ignore enemy evasion and accuracy changes,\nand has bonus effects when landing critical hits.",
     "weapons": [
         11,
         0,
@@ -15,7 +16,7 @@
         3,
         4,
         0,
-        3,
+        5,
         7,
         1,
         2

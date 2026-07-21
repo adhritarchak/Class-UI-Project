@@ -1,5 +1,6 @@
 {
     "name": "Ronin",
+    "description": "A mobile glass cannon of a class whose strikes grow stronger when hurt, and can take normally\nlethal hits and keep going.",
     "weapons": [
         5,
         0,
@@ -12,20 +13,20 @@
     "movement": 1,
     "baseStats": [
         1,
-        1,
-        5,
+        2,
+        7,
         0,
         6,
         4,
         4,
-        1
+        0
     ],
-    "skill1Name": "",
-    "skill1Data": "",
-    "skill2Name": "",
-    "skill2Data": "",
-    "skill3Name": "",
-    "skill3Data": "",
+    "skill1Name": "Bushido",
+    "skill1Data": "Increase STR by 25% when under 80% HP.",
+    "skill2Name": "---",
+    "skill2Data": "---",
+    "skill3Name": "---",
+    "skill3Data": "---",
     "preClass1": "",
     "preClass2": "",
     "preClass3": "",
@@ -57,6 +58,19 @@
             "delay": 45,
             "power": 110,
             "range": 6,
+            "effect": "No Effect"
+        },
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 4,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 25,
+            "power": 90,
+            "range": 2,
             "effect": "No Effect"
         }
     ]

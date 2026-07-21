@@ -1,5 +1,6 @@
 {
     "name": "Swordmaster",
+    "description": "A skilled swordfighter who can fight on the frontlines with speed and the ability to parry\nattacks to leave attackers wide open.",
     "weapons": [
         1,
         4,
@@ -12,11 +13,11 @@
     "movement": 1,
     "baseStats": [
         7,
-        2,
+        3,
         10,
-        2,
-        11,
-        9,
+        3,
+        12,
+        10,
         7,
         4
     ],

@@ -1,5 +1,6 @@
 {
     "name": "Mage",
+    "description": "A student of magic who can call upon multiple elements to hit the weaknesses of a variety of\nenemies, and can restore their own SP.",
     "weapons": [
         14,
         0,
@@ -12,16 +13,16 @@
     "movement": 2,
     "baseStats": [
         1,
-        5,
+        6,
         0,
         6,
-        2,
+        3,
         4,
         0,
         4
     ],
-    "skill1Name": "Magical Expertise",
-    "skill1Data": "Able to operate and repair magical structures.",
+    "skill1Name": "Font of Magic",
+    "skill1Data": "Restore 5% SP at the end of every turn.",
     "skill2Name": "---",
     "skill2Data": "---",
     "skill3Name": "---",

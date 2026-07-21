@@ -1,5 +1,6 @@
 {
     "name": "Gladiator",
+    "description": "A very physically strong fighter with high health, but poorer defenses. Is very difficult to stop\nonce in close, and is able to shrug off attempts to slow them down.",
     "weapons": [
         8,
         7,
@@ -11,8 +12,8 @@
     ],
     "movement": 1,
     "baseStats": [
-        6,
-        0,
+        7,
+        1,
         7,
         0,
         5,

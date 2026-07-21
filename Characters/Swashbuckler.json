@@ -1,5 +1,6 @@
 {
     "name": "Swashbuckler",
+    "description": "A supremely evasive fighter who loves to be in the fray, evading attacks and striking back with\nstyle. Is very hard to slow down, and is immune to various status effects.",
     "weapons": [
         4,
         12,
@@ -12,16 +13,16 @@
     "movement": 3,
     "baseStats": [
         8,
-        9,
+        11,
         13,
-        5,
+        7,
         18,
         16,
-        8,
-        5
+        6,
+        9
     ],
     "skill1Name": "Moxie",
-    "skill1Data": "Increase critical hit rate when near multiple enemies.",
+    "skill1Data": "Increase critical hit rate by 20% when near at least 2 enemies.",
     "skill2Name": "Quick Feet",
     "skill2Data": "Prevents losses to evasion; immune to Chained.",
     "skill3Name": "Steel Heart",

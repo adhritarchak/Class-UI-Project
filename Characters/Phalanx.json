@@ -1,5 +1,6 @@
 {
     "name": "Phalanx",
+    "description": "A defensive soldier who can take attacks and dish them back out with aplomb. Specializes in\nlanding attacks on evasive targets and crippling enemies' attack.",
     "weapons": [
         1,
         2,
@@ -13,7 +14,7 @@
     "baseStats": [
         6,
         1,
-        3,
+        5,
         1,
         1,
         2,
@@ -21,7 +22,7 @@
         1
     ],
     "skill1Name": "Pressure",
-    "skill1Data": "Nearby enemies have reduced evasion.",
+    "skill1Data": "Nearby enemies have 30% reduced evasion.",
     "skill2Name": "---",
     "skill2Data": "---",
     "skill3Name": "---",

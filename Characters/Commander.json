@@ -1,5 +1,6 @@
 {
     "name": "Commander",
+    "description": "A frontline class whose mere prescence bolsters their allies' spirits and makes them tougher to\ntake down. Can also get in the fray themselves and take on enemies to protect their frailer\nallies.",
     "weapons": [
         6,
         7,
@@ -12,13 +13,13 @@
     "movement": 1,
     "baseStats": [
         12,
-        2,
-        6,
+        3,
+        8,
         1,
         4,
         11,
         11,
-        5
+        6
     ],
     "skill1Name": "Discipline",
     "skill1Data": "Resist Fear, Stun, and Rage by 50%.",

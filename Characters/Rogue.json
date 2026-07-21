@@ -1,5 +1,6 @@
 {
     "name": "Rogue",
+    "description": "A fleet-footed class who is difficult to hit and can move around and strike at enemies at the\nsame time. Cannot easily be slowed down.",
     "weapons": [
         4,
         0,
@@ -13,7 +14,7 @@
     "baseStats": [
         1,
         4,
-        3,
+        5,
         3,
         6,
         3,

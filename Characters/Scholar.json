@@ -17,12 +17,12 @@
         0,
         5,
         4,
-        1,
+        3,
         2,
         2
     ],
-    "skill1Name": "Item Expertise",
-    "skill1Data": "Increase effect of battle items.",
+    "skill1Name": "Magic Expertise",
+    "skill1Data": "Able to operate and repair magical structures.",
     "skill2Name": "",
     "skill2Data": "",
     "skill3Name": "",
@@ -32,7 +32,7 @@
     "preClass3": "",
     "nextClass1": "Engineer",
     "nextClass2": "Alchemist",
-    "nextClass3": "",
+    "nextClass3": "Artificer",
     "abilities": [
         {
             "abilityType": "move",

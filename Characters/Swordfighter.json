@@ -1,5 +1,6 @@
 {
     "name": "Swordfighter",
+    "description": "A class who uses swords. A strong all-rounder who can take and deal damage well. Has a\nvariety of moves for different situations, and is stronger when facing other sword-wielders.",
     "weapons": [
         1,
         0,
@@ -17,7 +18,7 @@
         0,
         6,
         4,
-        1,
+        3,
         1
     ],
     "skill1Name": "Duelist",

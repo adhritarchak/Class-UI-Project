@@ -1,5 +1,6 @@
 {
     "name": "Sharpshooter",
+    "description": "A bow-wielder who can hit even the most evasive of targets, even from the longest of ranges. \nDeals extra damage from critical hits, and pierces defense when doing so.",
     "weapons": [
         11,
         0,
@@ -12,10 +13,10 @@
     "movement": 1,
     "baseStats": [
         4,
-        6,
-        10,
-        2,
         8,
+        10,
+        3,
+        9,
         14,
         3,
         5
@@ -45,6 +46,13 @@
             "power": 100,
             "range": 3,
             "effect": "No Effect"
+        },
+        {
+            "abilityType": "passive",
+            "name": "Piercing Critical",
+            "level": 1,
+            "condition": "Land a critical hit",
+            "effect": "Deal 50% more damage, and pierce guard by\n75%."
         }
     ]
 }

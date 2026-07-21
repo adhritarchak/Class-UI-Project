@@ -1,6 +1,6 @@
 {
     "name": "Astrologer",
-    "description": "",
+    "description": "A seer of the stars who supports allies with buffs, weakens enemies with statuses, and can heal\nothers with astral magic.",
     "weapons": [
         15,
         0,
@@ -19,14 +19,14 @@
         0,
         2,
         3,
-        3
+        5
     ],
     "skill1Name": "Stellar Insight",
     "skill1Data": "Increase duration of buffs applied by user by 2 turns.",
-    "skill2Name": "",
-    "skill2Data": "",
-    "skill3Name": "",
-    "skill3Data": "",
+    "skill2Name": "---",
+    "skill2Data": "---",
+    "skill3Name": "---",
+    "skill3Data": "---",
     "preClass1": "",
     "preClass2": "",
     "preClass3": "",

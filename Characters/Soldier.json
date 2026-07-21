@@ -1,5 +1,6 @@
 {
     "name": "Soldier",
+    "description": "A frontline fighter who is well-balanced between offense, defense, and speed. High dexterity\nallows them to hit their target consistently, and they also have a resistance to certain status\neffects.",
     "weapons": [
         6,
         0,
@@ -13,11 +14,11 @@
     "baseStats": [
         5,
         1,
-        3,
+        4,
         0,
         3,
         6,
-        3,
+        4,
         1
     ],
     "skill1Name": "Discipline",

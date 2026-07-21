@@ -1,5 +1,6 @@
 {
     "name": "Cavalier",
+    "description": "A mounted class whose weapons are well-balanced and has great mobility and agility to get in\nand out of combat with ease.",
     "weapons": [
         2,
         6,
@@ -11,11 +12,11 @@
     ],
     "movement": 6,
     "baseStats": [
-        3,
+        4,
         0,
         5,
         1,
-        3,
+        4,
         3,
         4,
         3

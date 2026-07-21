@@ -1,5 +1,6 @@
 {
     "name": "Sword Saint",
+    "description": "A master of swordfighting who uses their expertise with blades to strike with speed and power. Is also highly mobile and tough to pin down, and can parry enemy attacks to leave them open.\nGrows stronger when facing opponents using the same weapon.",
     "weapons": [
         1,
         4,
@@ -12,9 +13,9 @@
     "movement": 4,
     "baseStats": [
         9,
-        5,
-        15,
-        7,
+        6,
+        16,
+        11,
         16,
         14,
         6,

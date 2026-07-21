@@ -1,5 +1,6 @@
 {
     "name": "Medic",
+    "description": "A fast healer with high mobility who is able to heal allies very quickly and defend themselves\nwith their rifle. Can also support allies from behind.",
     "weapons": [
         3,
         12,
@@ -15,13 +16,13 @@
         5,
         0,
         4,
-        3,
+        5,
         6,
         0,
         1
     ],
     "skill1Name": "Survival Expertise",
-    "skill1Data": "Resist Physical status effects; immune to Paralysis and Poison.",
+    "skill1Data": "Resist Physical status effects by 30%; immune to Paralysis and Poison.",
     "skill2Name": "---",
     "skill2Data": "---",
     "skill3Name": "---",

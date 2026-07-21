@@ -1,5 +1,6 @@
 {
     "name": "Shaman",
+    "description": "A spellcaster with wide-area attacks who is tough on the physical side. Able to deal consistent\ndamage and dodge ranged attacks, and has the ability to pierce guards with certain attacks.",
     "weapons": [
         15,
         0,
@@ -14,18 +15,18 @@
         3,
         3,
         2,
-        4,
+        5,
         1,
-        4,
+        5,
         4,
         1
     ],
-    "skill1Name": "",
-    "skill1Data": "",
-    "skill2Name": "",
-    "skill2Data": "",
-    "skill3Name": "",
-    "skill3Data": "",
+    "skill1Name": "Range Extender",
+    "skill1Data": "Increases the range of attack magic by 5m.",
+    "skill2Name": "---",
+    "skill2Data": "---",
+    "skill3Name": "---",
+    "skill3Data": "---",
     "preClass1": "",
     "preClass2": "",
     "preClass3": "",
@@ -77,7 +78,7 @@
             "name": "Wind Wall",
             "level": 1,
             "condition": "HP > 80%",
-            "effect": "Increases evasion from ranged physical attacks"
+            "effect": "Increases evasion from ranged physical attacks."
         }
     ]
 }

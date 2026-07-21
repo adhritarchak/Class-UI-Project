@@ -254,7 +254,7 @@ def main():
     descriptionFrame.pack(side=TOP, fill=X, pady=4)
     descLabel = ttk.Label(descriptionFrame, text="Description", padding=1)
     descLabel.pack(side=TOP,pady=2)
-    descText = UIText(master=descriptionFrame, height=2, width=60, font=FONT)
+    descText = UIText(master=descriptionFrame, height=3, width=80, font=FONT)
     descText.pack(side=TOP,pady=2)
     # ---------------------------
 

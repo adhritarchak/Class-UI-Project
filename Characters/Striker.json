@@ -1,5 +1,6 @@
 {
     "name": "Striker",
+    "description": "A fighter who hits incredibly hard at the cost of a lacking defense. Specializes in breaking down\ndefenses with their hard-hitting, armor-piercing strikes.",
     "weapons": [
         2,
         0,
@@ -13,11 +14,11 @@
     "baseStats": [
         3,
         1,
-        6,
+        7,
         0,
-        2,
-        2,
-        6,
+        3,
+        4,
+        4,
         2
     ],
     "skill1Name": "Counter Break",
@@ -45,6 +46,13 @@
             "power": 110,
             "range": 2,
             "effect": "No Effect"
+        },
+        {
+            "abilityType": "passive",
+            "name": "Armor Breaker",
+            "level": 1,
+            "condition": "Land a melee attack",
+            "effect": "Lower defense of hit targets by 20%."
         }
     ]
 }

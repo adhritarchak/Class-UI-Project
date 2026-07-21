@@ -1,6 +1,6 @@
 {
     "name": "Brawler",
-    "description": "",
+    "description": "A fast and hard-to-hit fighter whose strikes pierce defenses. They can dodge ranged attacks well and use moves to close the distance and strike.",
     "weapons": [
         10,
         0,
@@ -16,13 +16,13 @@
         3,
         4,
         3,
-        4,
+        7,
         3,
         1,
-        3
+        2
     ],
     "skill1Name": "Reflex",
-    "skill1Data": "Increased evasion against ranged attacks.",
+    "skill1Data": "25% Increased evasion against ranged attacks.",
     "skill2Name": "---",
     "skill2Data": "---",
     "skill3Name": "---",

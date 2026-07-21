@@ -1,5 +1,6 @@
 {
     "name": "Axeman",
+    "description": "A powerful axe-wielding soldier who can power through attempts to slow them down to reach\nclose range and deal high damage.",
     "weapons": [
         7,
         0,
@@ -15,8 +16,8 @@
         0,
         7,
         0,
-        5,
-        1,
+        6,
+        2,
         1,
         2
     ],
@@ -45,6 +46,58 @@
             "power": 110,
             "range": 2,
             "effect": "No Effect"
+        },
+        {
+            "abilityType": "move",
+            "name": "Basic Attack",
+            "level": 1,
+            "weapon": 15,
+            "element": 0,
+            "moveType": 1,
+            "cost": 0,
+            "delay": 35,
+            "power": 70,
+            "range": 2,
+            "effect": "Restore 50% of damage dealt as SP"
+        },
+        {
+            "abilityType": "move",
+            "name": "VIII - Strength",
+            "level": 1,
+            "weapon": 15,
+            "element": 10,
+            "moveType": 5,
+            "cost": 8,
+            "delay": 35,
+            "power": 0,
+            "range": 3,
+            "effect": "Target's STR up"
+        },
+        {
+            "abilityType": "move",
+            "name": "XVI - The Tower",
+            "level": 1,
+            "weapon": 15,
+            "element": 10,
+            "moveType": 5,
+            "cost": 9,
+            "delay": 35,
+            "power": 0,
+            "range": 3,
+            "effect": "Target's DEF, MDF down"
+        },
+        {
+            "abilityType": "move",
+            "name": "Succor",
+            "level": 1,
+            "weapon": 15,
+            "element": 7,
+            "moveType": 3,
+            "cost": 6,
+            "delay": 30,
+            "power": 100,
+            "range": 3,
+            "effect": "Heal target's HP"
         }
     ]
 }

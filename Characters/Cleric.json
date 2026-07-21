@@ -1,6 +1,6 @@
 {
     "name": "Cleric",
-    "description": "",
+    "description": "A powerful healing class whose magic can heal and support allies, and who is strong against\nincoming magic attacks and status effects.",
     "weapons": [
         13,
         0,
@@ -19,14 +19,14 @@
         4,
         3,
         0,
-        5
+        7
     ],
     "skill1Name": "Holy Blessing",
-    "skill1Data": "Resist magic status effects.",
-    "skill2Name": "",
-    "skill2Data": "",
-    "skill3Name": "",
-    "skill3Data": "",
+    "skill1Data": "Resist magic status effects by 50%.",
+    "skill2Name": "---",
+    "skill2Data": "---",
+    "skill3Name": "---",
+    "skill3Data": "---",
     "preClass1": "",
     "preClass2": "",
     "preClass3": "",
