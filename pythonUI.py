@@ -133,7 +133,13 @@ def main():
     
     # Root definition
     root = Tk()
-    root.geometry("700x900+250+50")                     # Window size is set to 700x900, positoned just right of the file list on this editor.
+    screenWidth = root.winfo_screenwidth()
+    screenHeight = root.winfo_screenheight()
+    windowWidth = min(screenWidth-275, 700)
+    windowHeight = screenHeight-110
+
+    # Window size is set to be 700px wide max and as tall as possible, positoned just right of the file list on this editor.
+    root.geometry(f"{windowWidth}x{windowHeight}+250+20")
     root.title("Character Builder")
 
     # Scrollbars and canvas
@@ -375,7 +381,10 @@ def main():
         except Exception as e:                                  # If some error occurs, just print the error and each block's data to the console.
             print("Error in saveCharacter: {}".format(e))
             for block in sorter.objectList:
-                block.printDebug()
+                try:
+                    block.printDebug()
+                except:
+                    pass
             printLoadStatus("Error saving character. See console for details.")
         # print(abilityList)
         currentCharacter.setData(
@@ -492,7 +501,8 @@ def main():
     def addMoveBlock(move: dict = None) -> None:
         """Adds a new move block to the ability list. Can pre-populate with data from a dict."""
 
-        newMoveBlock = MoveBlock(sorter.baseFrame, abilityIcon, weaponIcons, typeIcons, elementIcons, rangeIcons)
+        newMoveBlock = MoveBlock(parent=sorter.baseFrame, moveIcon=abilityIcon, weaponIcons=weaponIcons, 
+                                 typeIcons=typeIcons, elementIcons=elementIcons, rangeIcons=rangeIcons)
         if move is not None:
             newMoveBlock.setData(move)
 

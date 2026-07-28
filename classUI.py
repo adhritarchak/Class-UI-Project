@@ -27,13 +27,14 @@ class Ability:
 class Move(Ability):
     """Active moves that classes use."""
     
-    weapon: int
-    element: int
-    moveType: int
-    cost: int
-    delay: int
-    power: int
-    range: int
+    weapon: int     # Weapon selector
+    element: int    # Element selector
+    moveType: int   # Move class (attack, heal, misc) selector
+    cost: int       # SP cost text
+    delay: int      # AT Delay text
+    power: str      # Move power text (can be '---' so must be a string)
+    range: int      # Move range (melee, ranged, AoE, etc) selector
+    rangeNum: str   # Move range distance text
 
     def __init__(self):
         self.abilityType = "move"
@@ -44,8 +45,9 @@ class Move(Ability):
         self.moveType = 0
         self.cost = 0
         self.delay = 0
-        self.power = 0
+        self.power = ''
         self.range = 0
+        self.rangeNum = ''
         self.effect = ""
     
     def setData(self, data: dict) -> None:
@@ -56,8 +58,9 @@ class Move(Ability):
         self.moveType = data.get("moveType", 0)
         self.cost = data.get("cost", 0)
         self.delay = data.get("delay", 0)
-        self.power = data.get("power", 0)
+        self.power = data.get("power", '0')
         self.range = data.get("range", 0)
+        self.rangeNum = data.get("rangeNum", '0m')
         self.effect = data.get("effect", "")
 class Passive(Ability):
     """Passive effects that trigger when the conditions are met."""
@@ -447,6 +450,7 @@ class MoveBlock(AbilityBlock):
     costEntry: UIEntry
     delayEntry: UIEntry
     powerEntry: UIEntry
+    rangeEntry: UIEntry
     effectText: UIText
 
     # weapon: int
@@ -454,12 +458,14 @@ class MoveBlock(AbilityBlock):
     # moveType: int
     # cost: int
     # delay: int
-    # power: int
+    # power: str
     # range: int
+    # rangeNum: str
     # effect: str
 
     def __init__(self, parent: ttk.Panedwindow, moveIcon: PhotoImage, weaponIcons: list[PhotoImage],
-                  typeIcons: list[PhotoImage], elementIcons: list[PhotoImage], rangeIcons: list[PhotoImage], move: Move = None) -> None:
+                  typeIcons: list[PhotoImage], elementIcons: list[PhotoImage], 
+                  rangeIcons: list[PhotoImage], move: Move = None) -> None:
         self.baseFrame = ttk.Frame(parent, padding=5, border=1, relief="solid")
         self.baseFrame.pack(side=TOP, fill=X, pady=5)
         if move is None:
@@ -479,34 +485,39 @@ class MoveBlock(AbilityBlock):
         self.costLabel = ttk.Label(self.cdpFrame, text="Cost")
         self.delayLabel = ttk.Label(self.cdpFrame, text="Delay")
         self.powerLabel = ttk.Label(self.cdpFrame, text="Power")
+        self.rangeLabel = ttk.Label(self.cdpFrame, text="Range")
         self.costEntry = UIEntry(master=self.cdpFrame, width=5)
         self.delayEntry = UIEntry(master=self.cdpFrame, width=5)
         self.powerEntry = UIEntry(master=self.cdpFrame, width=5)
-        self.effectText = UIText(master=self.baseFrame, width=40, height=4)
+        self.rangeEntry = UIEntry(master=self.cdpFrame, width=5)
+        self.effectText = UIText(master=self.baseFrame, width=30, height=4)
 
-        self.abilityIcon.grid(row=0, column=0)
+        self.abilityIcon.grid(row=0, column=0, sticky="w")
         self.nameEntry.grid(row=0, column=1, columnspan=3, sticky="ew", padx=5, pady=5)
-        self.levelLabel.grid(row=0, column=5, padx=1)
-        self.levelEntry.grid(row=0, column=6)
+        self.levelLabel.grid(row=0, column=4, padx=1)
+        self.levelEntry.grid(row=0, column=5)
         self.weapon.pack(side=LEFT)
         self.typeIcon.pack(side=LEFT)
         self.elementIcon.pack(side=LEFT)
         self.rangeIcon.pack(side=LEFT)
-        self.iconFrame.grid(row=1, column=0, columnspan=2)
-        self.cdpFrame.grid(row=2, column=0, columnspan=4, sticky="ew", pady=5)
+        self.iconFrame.grid(row=1, column=0, columnspan=3, sticky="w")
+        self.cdpFrame.grid(row=2, column=0, columnspan=5, sticky="w", pady=5)
         self.costLabel.pack(side=LEFT, padx=2)
         self.costEntry.pack(side=LEFT, padx=2)
         self.delayLabel.pack(side=LEFT, padx=2)
         self.delayEntry.pack(side=LEFT, padx=2)
         self.powerLabel.pack(side=LEFT, padx=2)
         self.powerEntry.pack(side=LEFT, padx=2)
-        self.effectText.grid(row=3, column=0, columnspan=7, padx=5, pady=5, sticky="ew")
+        self.rangeLabel.pack(side=LEFT, padx=2)
+        self.rangeEntry.pack(side=LEFT, padx=2)
+        self.effectText.grid(row=3, column=0, columnspan=6, padx=5, pady=5, sticky="ew")
 
         self.nameEntry.insert(0, self.move.name)
         self.levelEntry.insert(0, str(self.move.level))
         self.costEntry.insert(0, str(self.move.cost))
         self.delayEntry.insert(0, str(self.move.delay))
-        self.powerEntry.insert(0, str(self.move.power))
+        self.powerEntry.insert(0, self.move.power)
+        self.rangeEntry.insert(0, self.move.rangeNum)
         self.effectText.insert("1.0", self.move.effect)
 
     def updateMove(self) -> None:
@@ -518,7 +529,8 @@ class MoveBlock(AbilityBlock):
         self.move.range = self.rangeIcon.currentIcon
         self.move.cost = int(self.costEntry.get()) if self.costEntry.get().isdigit() else 0
         self.move.delay = int(self.delayEntry.get()) if self.delayEntry.get().isdigit() else 0
-        self.move.power = int(self.powerEntry.get()) if self.powerEntry.get().isdigit() else 0
+        self.move.power = self.powerEntry.get()
+        self.move.rangeNum = self.rangeEntry.get()
         self.move.effect = self.effectText.get("1.0", "end-1c")
     def getData(self) -> Move:
         self.updateMove()
